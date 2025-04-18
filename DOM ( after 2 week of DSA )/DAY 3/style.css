@@ -1,0 +1,68 @@
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{height: 100%; width: 100%;} */
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+
+/* 
+h2{
+font-size:  30px;
+}
+
+.card{
+    background-color: rgb(160, 165, 152);
+    padding:  25px 70px;
+    border-radius: 20px;
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+h5{
+    color:  red;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+button{
+    padding:  10px 20px;
+    font-size: 20px;
+    background-color: lightseagreen;
+    font-weight: 600;
+    border:  none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+
+button:active{
+    scale:0.93;
+}
+button:hover{
+    background-color: rgb(50, 162, 157);
+} */
+
+
+

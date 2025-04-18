@@ -1,0 +1,57 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(55, 52, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+   
+}
+
+.photo-container img{
+    height: 95%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#heart {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+#heart.dikhana{
+    opacity: 1;
+    transform: translate(-50%, -50%) ;
+}
+
+
+  
