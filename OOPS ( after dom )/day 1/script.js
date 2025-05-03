@@ -13,8 +13,16 @@
 // }
 
 
+// agar function ko call krte time new laga diya matlab ek blank
+// object create hue hoga yehimagine karlo
 
-// constructor function ( old way )
+
+// jab bhi function mai this dikhai de , eska matlb vo jo blank 
+// Object bana tha new ki vjah se vo this k jgha ajyega esa imagine karo
+
+
+
+// constructo r function ( old way es-5 )
 
 // function Ghar(){
 //  this.shehar = "delhi",
@@ -25,6 +33,19 @@
 
 // var ghar2 = new Ghar()
 // console.log(ghar2)
+
+// another method we used to do previously for making object
+
+// function Ghar(){
+//     return {
+//         sehar: "Delhi",
+//         kamre: 3,
+//         bathroom : 2,
+//         kitchen: 1
+//     }
+// }
+
+// let Ghar1 = Ghar()
 
 
 
@@ -37,7 +58,9 @@
 
 // }
 // let t1 = new Tofee()
+// let t2 = new Tofee()
 
+// ek hi object bnaya use bar bar use kr liyaa
 
 
 
@@ -63,14 +86,16 @@
 
 // with class ( that we do now )
 
-class Toffee{
-constructor(flavour,price,expiry){
-    this.flavour = flavour;
-    this.price = price;
-    this.expiry = expiry;
-}}
 
-let T5 = new Toffee("mango",2,"2024");   // ham constructor ko chala rahe hai
-let T3 = new Toffee("guava",2,"2024"); 
-let T2 = new Toffee("litchii",2,"2024"); 
+
+// class Toffee{
+// constructor(flavour,price,expiry){
+//     this.flavour = flavour;
+//     this.price = price;
+//     this.expiry = expiry;
+// }}
+
+// let T5 = new Toffee("mango",2,"2024");   // ham constructor ko chala rahe hai
+// let T3 = new Toffee("guava",2,"2024"); 
+// let T2 = new Toffee("litchii",2,"2024"); 
 

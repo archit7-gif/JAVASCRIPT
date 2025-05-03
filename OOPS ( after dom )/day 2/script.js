@@ -14,10 +14,24 @@
 
 
 
+// jab bhi koi ek property jo sabme same hai , like kai sari toffe hai but 
+// sabka price lets say 10 hai to unhe individually price dena shi nhi hai,
+// rather we will give prce in protottpes to vo sabme share ho jyega
+
+
+// function Toffee(name){
+//     this.name = name;
+//     this.price = 10
+// }
+
+// let t1 = new Toffee("alpinlibe")
+// let t2 = new Toffee("dairy milk")
+// console.log(t1,t2)
 
 
 
-// jab sabka price ek hi hai to use ek k through
+
+// instead of this we do the below part
 
 
 
@@ -28,7 +42,6 @@
 
 // let t1 = new Toffee("alpinlibe")
 // let t2 = new Toffee("dairy milk")
-
 // console.log(t1,t2)
 
 
@@ -37,6 +50,28 @@
 
 
 
+// normal method
+
+// function Human(hasHand,age,name){
+//     this.hasHand = hasHand;
+//     this.age = age;
+//     this.name = name; 
+//     this.sayHelllo = function(){
+//     console.log("hello")
+//    }
+
+//}
+
+// let h1 = new Human(true,25,"archit")
+// let h2 = new Human(true,22,"sumit")
+// let h3 = new Human(false,22,"rohit")
+
+// h2.sayHello()
+
+
+
+
+// prototype method ( better if there is some shared property)
 
 
 // function Human(hasHand,age,name){
@@ -45,15 +80,13 @@
 //     this.name = name; }
 
 // Human.prototype.sayHello = function(){
-//     console.log("hello")}
+//     console.log(`hello from ${this.name} and my age is ${this.age}`)}
 
-// let h1 = new Human("archit",25,true)
-// console.log(h1)
+// let h1 = new Human(true,25,"archit")
+// let h2 = new Human(true,22,"sumit")
+// let h3 = new Human(false,22,"rohit")
 
-
-
-
-
+// h2.sayHello()
 
 
 
@@ -90,22 +123,42 @@
 // let t1 = new Toffee ("kachha aam",2)
 // let t2 = new Toffee("mango bite", 4)
 
+// console.log(t1.printMyName)
 
 
 
 
-function Employee(name,age,id){
-    this.name =  name;
-    this.age = age;
-    this.id = id
-}
 
 
-Employee.prototype.printDetails = function(){
-    console.log(`my name is ${this.name} and iam ${this.age} old and this ${this.id} is my id`)
-}
+// function Employee(name,age,id){
+//     this.name =  name;
+//     this.age = age;
+//     this.id = id
+// }
 
-let e1 = new Employee("archit",26,12345)
-let e2 = new Employee("suraj",24,123)
-// console.log(e1,e2)
-e1.printDetails()
+
+// Employee.prototype.printDetails = function(){
+//     console.log(`my name is ${this.name} and iam ${this.age} old and this ${this.id} is my id`)
+// }
+
+// let e1 = new Employee("archit",26,12345)
+// let e2 = new Employee("suraj",24,123)
+// // console.log(e1,e2)
+// e1.printDetails()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
