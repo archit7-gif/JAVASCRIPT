@@ -192,6 +192,71 @@
 
 
 
+
+// Create a Cart class where you can add multiple Product objects
+// Product has name, price, quantity, brand
+// Method to add products to cart
+// Method to remove a product by name
+// Method to show total amount
+// Method to list all products like: "2x iPhone from Apple for ₹140000"
+
+
+class cart{
+    constructor(){
+    this.product = []
+    console.log(this.product)
+    }
+
+    addProducts(prod){
+    this.product.push(...prod)
+    }
+
+    removeProduct(rem){
+    let index = this.product.findIndex((naaaam)=> naaaam.name == rem  )
+    if(index !== -1){
+        this.product.splice(index,1)
+        console.log(` ${rem} is removed `)
+    }
+    else{
+        console.log("no such product")
+    }
+    
+    }
+
+    listOfAllProducts(){
+    this.product.forEach((all)=>{
+    console.log(` ${all.name} is available at ${all.price} and selcted quatity ${all.quantity} of ${all.brand}`)
+    })
+    }
+    
+    
+}
+
+let cart1 = new cart()
+
+class product{
+    constructor(name,price,quantity,brand){
+    this.name = name;
+    this.price =price;
+    this.quantity =quantity;
+    this.brand =brand
+    }
+}
+
+
+let product1 = new product("iphone13",12000,2,"apple")
+let product2 = new product("iphone1",120000,5,"smausng")
+let product3 = new product("galaxy25",3000,1,"samsung")
+
+cart1.addProducts([product1,product2,product3])
+
+cart1.listOfAllProducts()
+
+
+
+
+
+
 // ✅ Q2: Student — Loop and Array Logic
 // What you're building:
 // A class that keeps track of a student and their exam scores.
@@ -216,7 +281,7 @@
 //     getAverage() {
 //         if (this.grades.length === 0) {return 0;}
 //         let total = 0;
-//         for (let i = 0; i < this.grades.length; i++) {total += this.grades[i];}
+//         for (let i = 0; i < this.grades.length; i++) {total = total + this.grades[i];}
 
 //         let average = total / this.grades.length; return average;
 //     }
@@ -225,8 +290,6 @@
 
 // let s1 = new Student("Archit", [80, 90, 100]);
 // let s2 = new Student("Ankit", [70, 75, 65]);
-// let s3 = new Student("Nikhat", [88, 92, 85, 91]);
-
 // console.log(s1.getAverage()); 
 // console.log(s2.getAverage()); 
 // console.log(s3.getAverage()); 
@@ -290,4 +353,13 @@
 
 // Why it’s different:
 // Now your method validates user input before saving it — which is a basic form of error-proofing in apps.
+
+
+
+
+
+
+
+
+
 
